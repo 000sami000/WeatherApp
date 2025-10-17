@@ -1,6 +1,5 @@
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from './context/themeProvider'
-import React from 'react'
 import { Link } from 'react-router-dom'
 import CitySearch from './citySearch';
  import logo from '../assets/logo.png'
