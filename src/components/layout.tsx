@@ -9,11 +9,11 @@ function layout({children}:PropsWithChildren) {
          {children}
 
          </main>
-     <footer className='border-t backdrop-blur py-12 supports-[backdrop-filter]:bg-background/60'>
+     {/* <footer className='border-t backdrop-blur py-12 supports-[backdrop-filter]:bg-background/60'>
        <div className='container mx-auto px-4 text-center'>
         <p>Made  by Muhammad Sami</p>
        </div>
-     </footer>
+     </footer> */}
 
     </div>
   )
