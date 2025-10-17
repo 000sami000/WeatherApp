@@ -24,7 +24,7 @@ export default function CurrentWeather({
   const wind = data?.wind ?? {};
 
   return (
-    <Card>
+    <Card className=" bg-[#80808067] border-none">
       <CardContent className="p-6">
         {/* FLEX CONTAINER: column on mobile, row on larger screens */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">

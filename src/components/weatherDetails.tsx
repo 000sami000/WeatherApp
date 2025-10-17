@@ -50,7 +50,7 @@ function WeatherDetails({data}:WeatherDetailsProps) {
     },
   ];
   return (
-    <Card>
+    <Card className=' bg-[#80808067] border-none'>
       <CardHeader>
         <CardTitle>Weather Details</CardTitle>
       </CardHeader>

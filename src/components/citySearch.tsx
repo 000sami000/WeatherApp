@@ -47,13 +47,14 @@ export default function CitySearch() {
     <>
       <Button
         variant="outline"
-        className="relative w-full justify-start text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64"
+        className="relative w-full justify-start text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64  "
         onClick={() => setOpen(true)}
       >
         <Search className="mr-2 h-4 w-4" />
         Search cities...
       </Button>
-      <CommandDialog open={open} onOpenChange={setOpen}>
+      
+      <CommandDialog  open={open} onOpenChange={setOpen} >
         <Command>
           <CommandInput
             placeholder="Search cities..."
@@ -94,7 +95,7 @@ export default function CitySearch() {
               <>
                 <CommandSeparator />
                 <CommandGroup>
-                  <div className="flex items-center justify-between px-2 my-2">
+                  <div className="flex items-center justify-between px-2 my-2 ">
                     <p className="text-xs text-muted-foreground">
                       Recent Searches
                     </p>
@@ -164,6 +165,7 @@ export default function CitySearch() {
           </CommandList>
         </Command>
       </CommandDialog>
+
     </>
   );
 }

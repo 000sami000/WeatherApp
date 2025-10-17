@@ -92,7 +92,7 @@ function WeatherDashboardPage() {
          <FavouriteCities />
     <div className='flex items-center justify-between'>
       <h1 className='text-xl font-bold tracking-tight'>My Location</h1>
-    <Button variant={'outline'}  size={'icon'} onClick={refreshHandler} disabled={weatherQuery.isFetching || forecastQuery.isFetching}>
+    <Button className='bg-[#80808067] border-none' variant={'outline'}  size={'icon'} onClick={refreshHandler} disabled={weatherQuery.isFetching || forecastQuery.isFetching}>
     <RefreshCw className={`h-4 w-4 ${weatherQuery.isFetching?"animate-spin":""} `}/>
     </Button>
     </div>

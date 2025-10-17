@@ -36,16 +36,16 @@ function HourlyUpdates({data}:HourlyUpdatesProps) {
     feels_like: Math.round(item.main.feels_like),
   }));
   return (
-    <Card className="w-[100%]">
+    <Card className="w-[100%] bg-[#80808067] border-none">
     <CardHeader>
       <CardTitle>Today's Temperature</CardTitle>
    
     </CardHeader>
     <CardContent>
-  <div className="h-[200px] w-[100%]">
+  <div className="h-[300px] w-[100%]">
  
   <ResponsiveContainer width={"100%"} height={"100%"}>
-   <LineChart width={400} height={400} data={chartData}>
+   <LineChart width={450} height={500} data={chartData}>
 {/* <Line type={"monotone"} dataKey={'uv'} stroke="#8884d8"/> */}
 <XAxis
                 dataKey="time"

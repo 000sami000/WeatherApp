@@ -45,7 +45,7 @@ function WeatherForecast({ data }: WeatherForecastProps) {
   const nextDays = Object.values(dailyForecasts).slice(1, 6);
   const formatTemp = (temp: number) => `${Math.round(temp)}°`;
   return (
-    <Card>
+    <Card  className=' bg-[#80808067] border-none'>
     <CardHeader>
       <CardTitle>5-Day Forecast</CardTitle>
     </CardHeader>
