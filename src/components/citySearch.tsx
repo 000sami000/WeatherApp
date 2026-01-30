@@ -30,7 +30,6 @@ export default function CitySearch() {
   const handleSelect = (cityData: string) => {
     const [lat, lon, name, country] = cityData.split("|");
 
-    // Add to search history
     addToHistory.mutate({
       query,
       name,
@@ -90,7 +89,6 @@ export default function CitySearch() {
               </CommandGroup>
             )}
 
-            {/* Search History Section */}
             {history.length > 0 && (
               <>
                 <CommandSeparator />
@@ -133,7 +131,7 @@ export default function CitySearch() {
               </>
             )}
 
-            {/* Search Results */}
+            
             <CommandSeparator />
             {locations && locations.length > 0 && (
               <CommandGroup heading="Suggestions">
